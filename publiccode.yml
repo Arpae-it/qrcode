@@ -4,25 +4,21 @@
 
 publiccodeYmlVersion: '0.2'
 categories:
-  - data-visualization
+  - graphic-design
 description:
   en:
     features:
-      - Make wind roses from simple csv files
+      - Make qr codes online
     genericName: R + Shiny app
-    localisedName: windrose
+    localisedName: qrcode
     longDescription: |
-      A very simple tool to do something not so easy when using standard
-      spreadsheets: windroses. Based on the majestic openair package
-      (https://cran.r-project.org/web/packages/openair/index.html), this simple
-      tools allows the user to upload a easily formatted  csv file (a demo file
-      is provided) and automatically produces a 24h wind rose, a daylight wind
-      rose and a nighttime wind rose. Some basic options are provided. The
-      images can be exported as png. A working demo can be seen at:
-      https://arpae.shinyapps.io/windrosebollettini/
+      Probably one of the shortest pieces of code to easily produce qr codes online.
+      Based on the qrcode R package (https://cran.r-project.org/web/packages/qrcode/index.html) and written in less than 50 lines of code, it's an example of a deployable tool to
+      allow collegues to generate and edit qr codes online.
+      A working example is here:
+      https://arpae.shinyapps.io/qrcode/
     shortDescription: |
-      An automatic Shiny + R tool to produce wind roses starting from very
-      simply formatted csv files
+      An automatic Shiny + R tool to produce qrcodes online
 developmentStatus: stable
 it:
   conforme:
@@ -56,4 +52,4 @@ platforms:
 releaseDate: '2021-07-21'
 softwareType: standalone/web
 softwareVersion: stable
-url: 'https://github.com/Arpae-it/windrose'
+url: 'https://github.com/Arpae-it/qrcode'
