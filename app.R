@@ -7,22 +7,14 @@ ui <- fluidPage(
   titlePanel("Genera qrcode"),
 
   # Sidebar layout with input and output definitions ----
-  sidebarLayout(
-
-    
+  sidebarLayout(  
     sidebarPanel(width=2,
-
-                 textInput("testo","Inserisci il testo del qrcode",value="Esempio"),
-
-            
+                 textInput("testo","Inserisci il testo del qrcode",value="Esempio"),           
              selectInput("correction","Scegli il livello di correzione",choices=c("L","M","Q","H"),selected="M"),
              textInput("colpe","Scegli il colore dell'inchiostro (scrivi in inglese)",value="black"),
              textInput("colsf","Scegli il colore dello sfondo (scrivi in inglese)",value="white"),  
              selectInput("maske","Scegli una maschera",choices=c(0:7),selected="0")
-               
-
-               )
-    ,
+                    ),
     
  mainPanel(width=10,
    plotOutput("qr")
