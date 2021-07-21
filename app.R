@@ -22,33 +22,16 @@ ui <- fluidPage(
                
 
                )
-
-
-
-      
-
-
-
-
-
     ,
-
     
-    mainPanel(width=10,
-
-   
-     
+ mainPanel(width=10,
    plotOutput("qr")
       )
-
-
-
 ))
 
-
 server <- function(input, output,session) {
+
 output$qr<-renderPlot({
-  
  a<-qrcode_gen(input$testo,dataOutput = TRUE,as.character(input$correction),wColor=as.character(input$colsf),bColor=as.character(input$colpe),mask=as.numeric(input$maske))
 heatmap(a[nrow(a):1, ], Rowv = NA, Colv = NA, scale = "none", col = c(input$colsf, input$colpe), labRow = "", labCol = "")
 
