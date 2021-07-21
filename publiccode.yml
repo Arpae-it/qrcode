@@ -44,7 +44,7 @@ maintenance:
   contacts:
     - name: Paolo Veronesi
   type: community
-name: mappatore
+name: qrcode
 platforms:
   - linux
   - windows
