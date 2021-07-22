@@ -8,7 +8,7 @@ categories:
 description:
   en:
     features:
-      - Make qr codes online
+      - Making qr codes online
     genericName: R + Shiny app
     localisedName: qrcode
     longDescription: |
