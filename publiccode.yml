@@ -20,6 +20,9 @@ description:
     shortDescription: |
       An automatic Shiny + R tool to produce qrcodes online
 developmentStatus: stable
+screenshots:
+      - >-
+        screenshot.png
 it:
   conforme:
     gdpr: false
